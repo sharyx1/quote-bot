@@ -2,7 +2,8 @@ import random
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "8904343658:AAGsg3In92mLL12PsI-wOlMUQ8eh71lxZUg"
+import os
+TOKEN = os.environ.get("TOKEN")
 
 quotes = {
     "💪 Discipline": [
